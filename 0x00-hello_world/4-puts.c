@@ -3,7 +3,7 @@
 /**
  *main - the main function
  *
- *return: 0 if the program was runnig successfuly
+ *Return: 0 if the program was runnig successfuly
  */
 int main(void)
 {
