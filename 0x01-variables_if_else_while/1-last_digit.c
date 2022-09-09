@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
 #include <time.h>
 
 /* more headers goes there */
@@ -18,7 +18,7 @@ int main(void)
 
 	int n;
 	char n_to_string[10];
-
+	char last_digit;
 
 	srand(time(0));
 
@@ -26,15 +26,16 @@ int main(void)
 	sprintf(n_to_string, "%d", n);
 
 	/* your code goes there */
-	if (atoi(n_to_string[-1]) > 5)
+	last_digit = n_to_string[strlen(n_to_string)-1];
+	if (atoi(last_digit) > 5)
 	{
 		printf("Last digit of %d is and is greater than 5\n", n);
 	}
-	else if (atoi(n_to_string[-1]) == 0)
+	else if (atoi(last_digit) == 0)
 	{
 		printf("Last digit of %d is and is 0\n", n);
 	}
-	else if (atoi(n_to_string[-1]) < 6)
+	else if (atoi(last_digit) < 6)
 	{
 		printf("Last digit of %d is and is less than 6 and not 0\n", n);
 	}
