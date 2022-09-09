@@ -26,7 +26,7 @@ int main(void)
 	sprintf(n_to_string, "%d", n);
 
 	/* your code goes there */
-	last_digit = n_to_string[strlen(n_to_string)-1];
+	last_digit = n_to_string[strlen(n_to_string) - 1];
 	if (atoi(&last_digit) > 5)
 	{
 		printf("Last digit of %d is %c and is greater than 5\n", n, last_digit);
