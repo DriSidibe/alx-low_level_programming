@@ -7,7 +7,11 @@
 
 
 /* betty style doc for function main goes there */
-
+/**
+ *main - the main function
+ *
+ *Return: 0 is success
+ */
 int main(void)
 
 {
@@ -26,11 +30,11 @@ int main(void)
 	}
 	else if (n > 0)
 	{
-		printf("%d is positive\n",n);
+		printf("%d is positive\n", n);
 	}
 	else
 	{
-		printf("%d is zero\n",n);
+		printf("%d is zero\n", n);
 	}
 
 	return (0);
