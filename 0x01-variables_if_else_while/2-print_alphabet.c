@@ -17,7 +17,6 @@ int main(void)
 {
 
 	char a;
-	char end_line[10] = "\n";
 
 	for (a='a'; a<='z' ;a++)
 		putchar(a);
