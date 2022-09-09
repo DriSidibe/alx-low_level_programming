@@ -16,13 +16,12 @@ int main(void)
 
 {
 
-	char a;
-	int code_9 = '9';
+	int a;
 
-	for (a = '0'; a <= '9' ; a++)
+	for (a = 0 ; a <= 9 ; a++)
 	{
-		putchar(a);
-		if (a != code_9)
+		putchar(a + '0');
+		if (a != 9)
 		{
 			putchar(',');
 			putchar(' ');
