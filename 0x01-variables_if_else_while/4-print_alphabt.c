@@ -20,9 +20,9 @@ int main(void)
 
 	for (a = 'a'; a <= 'z' ; a++)
 	{
-		if (c != 'q' || c != 'e')
+		if (a != 'q' || a != 'e')
 		{
-			putchar(c);
+			putchar(a);
 		}
 	}
 	putchar('\n');
