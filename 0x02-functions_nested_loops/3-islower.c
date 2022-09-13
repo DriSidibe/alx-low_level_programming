@@ -1,38 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-
-#include <time.h>
-
-/* more headers goes there */
-
-
-/* betty style doc for function main goes there */
-
-/**
- *_islower - check the code
- *@c: the parameter
- *
- *Return: a result
- */
-int _islower(int c);
-
-/**
- *main - the main function
- *
- *Return: 0 is success
- */
-int main(void)
-
-{
-
-
-	/* your code goes there */
-
-
-	return (0);
-
-}
+#include "main.h"
 
 /**
  *_islower - check the code
