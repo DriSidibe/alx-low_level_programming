@@ -2,44 +2,23 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-#include <time.h>
-
-/* more headers goes there */
-
-
-/* betty style doc for function main goes there */
-
 /**
- *_abs - check the code
- *
- *Return: a result
+ *jack_bauer - check the code
  */
-int _abs(int n);
-
-/**
- *main - the main function
- *
- *Return: 0 is success
- */
-int main(void)
-
+void jack_bauer()
 {
+	int hour;
+	int minute;
 
-
-	/* your code goes there */
-
-
-	return (0);
-
-}
-
-/**
- *_abs - check the code
- *@n: the parameter
- *
- *Return: check the code
- */
-int _abs(int n)
-{
-	return abs(n);
+	for (hour = 0 ; hour < 24 ; hour++)
+	{
+		for (minute = 0 ; minute < 60 ; minute++)
+		{
+			_putchar(hour + '0');
+			_putchar(':');
+			_putchar(minute + '0');
+			_putchar(' ');
+			_putchar('\n');
+		}
+	}
 }
