@@ -10,13 +10,8 @@
  */
 int print_last_digit(int n)
 {
-	char n_to_string[10];
-        char last_digit;
 
-	sprintf(n_to_string, "%d", n);
+	int last_digit = n % 10;
 
-
-	last_digit = n_to_string[strlen(n_to_string) - 1];
-
-	return (atoi(&last_digit));
+	return (last_digit);
 }
