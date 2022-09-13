@@ -22,7 +22,7 @@ int main(void)
 		}
 		else
 		{
-			printf(", %d", i + i - 1 + i - 2);
+			printf(", %d", 2 * i - 3);
 		}
 	}
 
