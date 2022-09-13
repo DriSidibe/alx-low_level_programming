@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- *_islower - check the code
+ *_isalpha - check the code
  *@c: the parameter
  *
  *Return: check the code
