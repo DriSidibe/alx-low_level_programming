@@ -5,7 +5,7 @@
 /**
  *times_table - check the code
  */
-void times_table()
+void times_table(void)
 {
 	printf("0,  0,  0,  0,  0,  0,  0,  0,  0,  0\n");
 	printf("0,  1,  2,  3,  4,  5,  6,  7,  8,  9\n");
