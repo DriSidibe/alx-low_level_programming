@@ -5,7 +5,7 @@
 /**
  *times_table - check the code
  */
-void times_table(void)
+void times_table(int n)
 {
 	int i;
 	int j;
