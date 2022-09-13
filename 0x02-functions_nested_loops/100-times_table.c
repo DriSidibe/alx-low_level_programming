@@ -4,6 +4,7 @@
 
 /**
  *print_times_table - check the code
+ *@n: parameter
  */
 void print_times_table(int n)
 {
