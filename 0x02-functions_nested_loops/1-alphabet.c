@@ -34,6 +34,7 @@ void print_alphabet(void)
 {
 	for (char a = 'a' ; a <= 'z' ; a++)
 	{
-		printf("%c", a);
+		putchar(a);
 	}
+	putchar('\n');
 }
