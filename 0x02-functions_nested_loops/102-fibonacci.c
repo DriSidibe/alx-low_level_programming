@@ -10,9 +10,9 @@ int main(void)
 
 	int i;
 
-	for (i = 0 ; i <= 50 ; i++)
+	for (i = 1 ; i <= 50 ; i++)
 	{
-		if (i == 0)
+		if (i == 1)
 		{
 			printf("1");
 		}
