@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 #include <time.h>
 
@@ -7,38 +8,39 @@
 
 
 /* betty style doc for function main goes there */
+
+/**
+ *_islower - check the code
+ *@c: the parameter
+ *
+ *Return: a result
+ */
+int _islower(int c);
+
 /**
  *main - the main function
  *
  *Return: 0 is success
  */
-
-void print_alphabet_x10(void);
-
 int main(void)
 
 {
 
 
 	/* your code goes there */
-	print_alphabet_x10();
+
 
 	return (0);
 
 }
 
 /**
- *print_alphabet_x10 - print alphabet in lowercase
+ *_islower - check the code
+ *@c: the parameter
+ *
+ *Return: check the code
  */
-void print_alphabet_x10(void)
+int _islower(int c)
 {
-	for (int i = 0 ; i <= 10 ; i++)
-	{
-		for (char a = 'a' ; a <= 'z' ; a++)
-		{
-			putchar(a);
-		}
-		putchar('\n');
-	}
-	putchar('\n');
+	return (islower(c) != 0 ? 1 : 0);
 }
