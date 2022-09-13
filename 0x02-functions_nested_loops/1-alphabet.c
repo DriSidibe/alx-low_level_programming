@@ -1,6 +1,8 @@
 void print_alphabet(void)
 {
-	for (char a = 'a' ; a <= 'z' ; a++)
+	char a = 'a';
+
+	for (a = 'a' ; a <= 'z' ; a++)
 	{
 		putchar(a);
 	}
