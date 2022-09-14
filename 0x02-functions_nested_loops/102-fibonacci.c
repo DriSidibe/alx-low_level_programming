@@ -12,6 +12,7 @@ int main(void)
 	long int one_back;
 	long int sum;
 	int i;
+
 	printf("%d, %d", 1, 2);
 
 	one_back = 2;
