@@ -26,6 +26,7 @@ int main(void)
 
 		if (sum % 2 == 0)
 		{
+			printf("%d\n", sum);
 			sum_even = sum_even + sum;
 		}
 
