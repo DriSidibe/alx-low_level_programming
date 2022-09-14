@@ -17,7 +17,7 @@ int main(void)
 	one_back = 2;
 	two_back = 1;
 
-	for (i = 2 ; i <= 50 ; i++)
+	for (i = 2 ; i < 50 ; i++)
 	{
 		sum = one_back + two_back;
 		printf(", %ld", sum);
@@ -26,6 +26,7 @@ int main(void)
 
 		one_back = sum;
 	}
+	putchar('\n');
 
 	return (0);
 }
