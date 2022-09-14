@@ -26,7 +26,7 @@ int main(void)
 
 		if (sum % 2 == 0)
 		{
-			sum_even += sum;
+			sum_even = sum_even + sum;
 		}
 
 		two_back = one_back;
