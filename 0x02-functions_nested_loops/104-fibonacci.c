@@ -8,9 +8,9 @@
 int main(void)
 {
 
-	long int two_back;
-	long int one_back;
-	long int sum;
+	double two_back;
+	double one_back;
+	double sum;
 	int i;
 
 	one_back = 2;
@@ -23,7 +23,7 @@ int main(void)
 		sum = one_back + two_back;
 		two_back = one_back;
 
-		printf(", %ld", sum);
+		printf(", %d", sum);
 
 		one_back = sum;
 	}
