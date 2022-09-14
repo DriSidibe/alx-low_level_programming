@@ -11,7 +11,7 @@ int main(void)
 	int two_back;
 	int one_back;
 	int sum;
-
+	int i;
 	printf("%d, %d", 1, 2);
 
 	one_back = 2;
