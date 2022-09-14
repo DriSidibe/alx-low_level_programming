@@ -24,7 +24,7 @@ int main(void)
 	{
 		sum = one_back + two_back;
 
-		if (sum % 2 == 0)
+		if (sum % 2 == 0 && sum <= 4000000)
 		{
 			sum_even = sum_even + sum;
 		}
