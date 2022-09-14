@@ -14,5 +14,5 @@ int print_last_digit(int n)
 
 	last_digit = n % 10;
 
-	printf("%d", last_digit * 10 + last_digit);
+	_putchar(last_digit + '0');
 }
