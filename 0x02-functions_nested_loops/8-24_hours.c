@@ -5,7 +5,7 @@
 /**
  *jack_bauer - check the code
  */
-void jack_bauer()
+void jack_bauer(void)
 {
 	int i;
 	int j;
