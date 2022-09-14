@@ -11,7 +11,7 @@ int main(void)
 	long int two_back;
 	long int one_back;
 	long int sum;
-	long sum_even;
+	long int sum_even;
 	int i;
 
 
