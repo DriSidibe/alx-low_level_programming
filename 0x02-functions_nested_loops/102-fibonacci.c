@@ -8,9 +8,9 @@
 int main(void)
 {
 
-	int two_back;
-	int one_back;
-	int sum;
+	long int two_back;
+	long int one_back;
+	long int sum;
 	int i;
 	printf("%d, %d", 1, 2);
 
