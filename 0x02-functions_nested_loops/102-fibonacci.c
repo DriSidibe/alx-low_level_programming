@@ -1,27 +1,5 @@
 #include <stdio.h>
 
-
-/**
- *fibo - check the code
- *
- *Return: check the code
- */
-int fibo(int n)
-{
-	if (n == 0)
-	{
-		return (1);
-	}
-	else if (n == 1)
-	{
-		return (2);
-	}
-	else
-	{
-		return (fibo(n - 1) + fibo(n - 2));
-	}
-}
-
 /**
  *main - check the code
  *
@@ -30,7 +8,24 @@ int fibo(int n)
 int main(void)
 {
 
-	printf("%d", fibo(50));
+	int two_back;
+	int one_back;
+	int sum;
+
+	printf("%d, %d", 1, 2);
+
+	one_back = 2;
+	two_back = 1;
+
+	for (i = 2 ; i <= 50 ; i++)
+	{
+		sum = one_back + two_back;
+		printf(", %d", sum);
+
+		two_back = one_back;
+
+		one_back = sum;
+	}
 
 	return (0);
 }
