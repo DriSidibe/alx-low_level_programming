@@ -8,9 +8,9 @@
 int main(void)
 {
 
-	double two_back;
-	double one_back;
-	double sum;
+	long double two_back;
+	long double one_back;
+	long double sum;
 	int i;
 
 	one_back = 2;
