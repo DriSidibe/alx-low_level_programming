@@ -23,7 +23,7 @@ int main(void)
 		sum = one_back + two_back;
 		two_back = one_back;
 
-		printf(", %.0f", sum);
+		printf(", %.0Lf", sum);
 
 		one_back = sum;
 	}
