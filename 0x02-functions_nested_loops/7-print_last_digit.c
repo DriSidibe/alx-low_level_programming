@@ -1,5 +1,5 @@
 #include "main.h"
-#include <ctype.h>
+#include "6-abs.c"
 
 /**
  *print_last_digit - check the code
@@ -14,5 +14,5 @@ int print_last_digit(int n)
 
 	last_digit = n % 10;
 
-	return (last_digit);
+	return (_abs(last_digit));
 }
