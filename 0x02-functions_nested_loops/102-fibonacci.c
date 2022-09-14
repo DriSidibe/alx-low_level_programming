@@ -20,7 +20,7 @@ int main(void)
 	for (i = 2 ; i <= 50 ; i++)
 	{
 		sum = one_back + two_back;
-		printf(", %d", sum);
+		printf(", %ld", sum);
 
 		two_back = one_back;
 
