@@ -16,19 +16,17 @@ int main(void)
 	one_back = 2;
 	two_back = 1;
 
+	printf("%ld, %ld", 1, 2);
+
 	for (i = 2 ; i < 50 ; i++)
 	{
 		sum = one_back + two_back;
 		two_back = one_back;
 
-		if (sum % 2 == 0)
-		{
-			sum_even += sum;
-		}
+		printf(", %ld", sum);
 
 		one_back = sum;
 	}
-	printf("%ld", sum_even);
 	putchar('\n');
 
 	return (0);
