@@ -33,7 +33,7 @@ int main(void)
 
 		one_back = sum;
 	}
-	printf("%d", sum_even);
+	printf("%ld", sum_even);
 	putchar('\n');
 
 	return (0);
