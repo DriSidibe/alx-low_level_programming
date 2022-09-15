@@ -3,7 +3,8 @@
 
 /**
  *mul - check the code
- *@c: the parameter
+ *@a: the parameter
+ *@b: the parameter
  *
  *Return: check the code
  */
