@@ -2,7 +2,7 @@
 
 /**
  *print_square - check the code
- *@c: the parameter
+ *@size: the parameter
  *
  *Return: check the code
  */
@@ -28,5 +28,6 @@ void print_square(int size)
 		}
 
 	}
+
 	_putchar('\n');
 }
