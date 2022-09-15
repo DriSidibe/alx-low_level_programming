@@ -9,7 +9,7 @@
 int main(void)
 {
 
-	printf("%d", _isupper('A'));
+	more_numbers();
 
 	return (0);
 }
