@@ -2,31 +2,34 @@
 
 /**
  *print_triangle - check the code
- *@c: the parameter
+ *@size: the parameter
  *
  *Return: check the code
  */
-void print_triangle(int c)
+void print_triangle(int size)
 {
 
-	if (c > 0)
+	if (size > 0)
 	{
 		int i;
 		int j;
 
-		for (i = 0 ; i < c ; i++)
+		for (i = 1 ; i <= size ; i++)
 		{
-			for (j = 9 ; j >= i ; j--)
+			for (j = size - i ; j > 0 ; j--)
 			{
 				_putchar(' ');
 			}
-			for (j = 0 ; j <= i ; j++)
+			for (j = 0 ; j < i ; j++)
 			{
 				_putchar("#");
 			}
+			if (i == size)
+				continue;
+
+			_putchar('\n');
 		}
 
-		_putchar('\n');
 	}
 	else
 	{
