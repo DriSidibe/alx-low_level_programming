@@ -2,6 +2,7 @@
 
 /**
  *print_numbers - function
+ *@c: parameter
  */
 void print_numbers(void)
 {
