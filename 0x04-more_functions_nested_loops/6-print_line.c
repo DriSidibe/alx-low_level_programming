@@ -21,8 +21,4 @@ void print_line(int c)
 
 		_putchar('\n');
 	}
-	else
-	{
-		_putchar('\n');
-	}
 }
