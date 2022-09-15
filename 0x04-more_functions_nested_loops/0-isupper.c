@@ -11,5 +11,5 @@
 int _isupper(int c)
 {
 
-	return (isupper(c) != 0 ? 0 : 1);
+	return (isupper(c) == 0 ? 0 : 1);
 }
