@@ -2,6 +2,8 @@
 
 /**
  *main - function
+ *
+ *Return: return
  */
 int main(void)
 {
