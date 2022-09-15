@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
  *print_square - check the code
@@ -7,26 +6,27 @@
  *
  *Return: check the code
  */
-void print_square(int c)
+void print_square(int size)
 {
 
-	if (c > 0)
+	if (size > 0)
 	{
 		int i;
 		int j;
 
-		for (i = 0 ; i < c ; i++)
+		for (i = 0 ; i < size ; i++)
 		{
-			for (j = 0 ; j < c ; j++)
+			for (j = 0 ; j < size ; j++)
 			{
 				_putchar('#');
 			}
+			if (i == size - 1)
+			{
+				continue;
+			}
+			_putchar('\n');
 		}
 
-		_putchar('\n');
 	}
-	else
-	{
-		_putchar('\n');
-	}
+	_putchar('\n');
 }
