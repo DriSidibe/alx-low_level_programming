@@ -1,7 +1,3 @@
-#include "main.h"
-#include <stdlib.h>
-#include <ctype.h>
-
 /**
  *_isupper - check the code
  *@c: the parameter
