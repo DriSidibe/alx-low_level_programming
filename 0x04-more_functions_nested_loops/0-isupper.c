@@ -1,6 +1,4 @@
 #include <ctype.h>
-#include "main.h"
-#include <stdlib.h>
 
 /**
  *_isupper - check the code
