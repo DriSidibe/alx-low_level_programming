@@ -3,8 +3,6 @@
 /**
  *print_triangle - check the code
  *@size: the parameter
- *
- *Return: check the code
  */
 void print_triangle(int size)
 {
@@ -31,8 +29,5 @@ void print_triangle(int size)
 		}
 
 	}
-	else
-	{
-		_putchar('\n');
-	}
+	_putchar('\n');
 }
