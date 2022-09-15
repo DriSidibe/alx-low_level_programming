@@ -2,7 +2,6 @@
 
 /**
  *print_numbers - function
- *@c: parameter
  */
 void print_numbers(void)
 {
@@ -12,4 +11,5 @@ void print_numbers(void)
 	{
 		_putchar(i);
 	}
+	_putchar('\n');
 }
