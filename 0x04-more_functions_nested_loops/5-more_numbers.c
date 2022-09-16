@@ -1,23 +1,33 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- *more_numbers - print alphabet in lowercase
+ * more_numbers - Prints the numbers 0-14 ten times.
  */
 void more_numbers(void)
-{
-	int i;
-	int a;
 
-	for (i = 0 ; i <= 9 ; i++)
+{
+
+	int num, count;
+
+
+	for (count = 0; count <= 9; count++)
+
 	{
-		for (a = 0 ; a <= 14 ; a++)
+
+		for (num = 0; num <= 14; num++)
+
 		{
-			if (a > 9)
-			{
-				_putchar((int)(a / 10) + '0');
-			}
-			_putchar((a % 10) + '0'));
+
+			if (num > 9)
+
+				_putchar((num / 10) + '0');
+
+			_putchar((num % 10) + '0');
+
 		}
+
 		_putchar('\n');
+
 	}
+
 }
