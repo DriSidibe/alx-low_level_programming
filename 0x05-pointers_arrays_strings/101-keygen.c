@@ -11,7 +11,7 @@
 int main(void)
 {
 	char s[20];
-	char alphanum[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char alphanum[] = "!@#$^&*?0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	int i;
 	int len = 15;
 
