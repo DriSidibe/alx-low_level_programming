@@ -34,7 +34,7 @@ int main(void)
 	srand(time(NULL));
 	char s[20];
 
-	generator(s, 15);
+	generator(&s, 15);
 
 	return 0;
 }
