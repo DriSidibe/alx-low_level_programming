@@ -8,6 +8,7 @@
 void rev_string(char *str)
 {
 	int i;
+	size_t k;
 	int j = 0;
 	char tmp_str[1000];
 
@@ -17,9 +18,9 @@ void rev_string(char *str)
 		j++;
 	}
 
-	for (i = 0 ; i < strlen(str) ; i++)
+	for (k = 0 ; k < strlen(str) ; k++)
 	{
-		*(str + i) = tmp_str[i];
+		*(str + k) = tmp_str[k];
 	}
 
 }
