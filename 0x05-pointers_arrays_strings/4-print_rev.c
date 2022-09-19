@@ -9,7 +9,7 @@ void print_rev(char *str)
 {
 	size_t i;
 
-	for (i = strlen(str) ; i > 0 ; i--)
+	for (i = strlen(str) - 1 ; i >= 0 ; i--)
 	{
 		_putchar(*(str + i));
 	}
