@@ -1,4 +1,5 @@
 #include <string.h>
+#include <math.h>
 #include "main.h"
 
 /**
@@ -7,7 +8,7 @@
  */
 void puts_half(char *str)
 {
-	int i;
+	size_t i;
 
 	for (i = ceil(strlen(str) / 2) ; i < strlen(str) ; i++)
 	{
