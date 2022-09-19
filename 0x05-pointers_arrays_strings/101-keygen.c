@@ -13,8 +13,9 @@ char generator(int len)
 
 	char alphanum[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char s[20];
+	int i;
 
-	for (int i = 0; i < len; ++i)
+	for (i = 0; i < len; ++i)
 	{
 		s[i] = alphanum[rand() % (sizeof(alphanum) - 1)];
 	}
