@@ -8,11 +8,10 @@
  *
  *Return: the random password
  */
-char * generator(int len)
+char * generator(char *s, int len)
 {
 
 	char alphanum[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char s[20];
 	int i;
 
 	for (i = 0; i < len; ++i)
@@ -33,8 +32,9 @@ int main(void)
 {
 
 	srand(time(NULL));
+	char s[20];
 
-	generator(15);
+	generator(s, 15);
 
 	return 0;
 }
