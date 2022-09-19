@@ -3,20 +3,6 @@
 
 
 /**
- *generator -  generates random valid passwords for the program 101-crackme.
- *@len: the lenght of the random password
- *
- *Return: the random password
- */
-char * generator(char *s, int len)
-{
-
-
-	return s;
-}
-
-
-/**
  *main - the main function.
  *
  *Return: the return code
