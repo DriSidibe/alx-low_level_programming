@@ -8,7 +8,7 @@
  *
  *Return: the random password
  */
-char generator(int len)
+char *generator(int len)
 {
 
 	char alphanum[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
