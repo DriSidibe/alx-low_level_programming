@@ -11,13 +11,6 @@
 char * generator(char *s, int len)
 {
 
-	char alphanum[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	int i;
-
-	for (i = 0; i < len; ++i)
-	{
-		s[i] = alphanum[rand() % (sizeof(alphanum) - 1)];
-	}
 
 	return s;
 }
@@ -31,10 +24,19 @@ char * generator(char *s, int len)
 int main(void)
 {
 	char s[20];
+	char alphanum[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	int i;
+	int len = 15;
 
 	srand(time(NULL));
 
-	generator(s, 15);
+	for (i = 0; i < len; ++i)
+	{
+		s[i] = alphanum[rand() % (sizeof(alphanum) - 1)];
+	}
+
+	printf("%s", s);
+
 
 	return 0;
 }
