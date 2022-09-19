@@ -13,11 +13,11 @@ void puts_half(char *str)
 
 	if (strlen(str) % 2 == 0)
 	{
-		j = round(strlen(str) / 2);
+		j = strlen(str) / 2;
 	}
 	else
 	{
-		j = (strlen(str) - 1) / 2;
+		j = ceil(strlen(str) / 2);
 	}
 
 	for (i = j ; i < strlen(str) ; i++)
