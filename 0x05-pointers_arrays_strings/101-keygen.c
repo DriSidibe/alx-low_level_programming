@@ -30,9 +30,9 @@ char * generator(char *s, int len)
  */
 int main(void)
 {
+	char s[20];
 
 	srand(time(NULL));
-	char s[20];
 
 	generator(s, 15);
 
