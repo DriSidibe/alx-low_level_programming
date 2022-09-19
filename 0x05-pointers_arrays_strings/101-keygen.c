@@ -20,7 +20,7 @@ char generator(int len)
 		s[i] = alphanum[rand() % (sizeof(alphanum) - 1)];
 	}
 
-	return s;
+	return *s;
 }
 
 
