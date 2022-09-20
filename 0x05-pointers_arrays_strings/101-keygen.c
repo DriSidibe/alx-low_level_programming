@@ -9,21 +9,82 @@
  *Return: the return code
  */
 int main(void)
+
 {
-	char s[20];
-	char alphanum[] = "!@#$^&*?0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	int i;
-	int len = 15;
 
-	srand(time(NULL));
+	char password[84];
 
-	for (i = 0; i < len; ++i)
+	int index = 0, sum = 0, diff_half1, diff_half2;
+
+
+	srand(time(0));
+
+
+	while (sum < 2772)
+
 	{
-		s[i] = alphanum[rand() % (sizeof(alphanum) - 1)];
+
+		password[index] = 33 + rand() % 94;
+
+		sum += password[index++];
+
 	}
 
-	printf("%s", s);
+
+	password[index] = '\0';
 
 
-	return 0;
+	if (sum != 2772)
+
+	{
+
+		diff_half1 = (sum - 2772) / 2;
+
+		diff_half2 = (sum - 2772) / 2;
+
+		if ((sum - 2772) % 2 != 0)
+
+			diff_half1++;
+
+
+		for (index = 0; password[index]; index++)
+
+		{
+
+			if (password[index] >= (33 + diff_half1))
+
+			{
+
+				password[index] -= diff_half1;
+
+				break;
+
+			}
+
+		}
+
+		for (index = 0; password[index]; index++)
+
+		{
+
+			if (password[index] >= (33 + diff_half2))
+
+			{
+
+				password[index] -= diff_half2;
+
+				break;
+
+			}
+
+		}
+
+	}
+
+
+	printf("%s", password);
+
+
+	return (0);
+
 }
