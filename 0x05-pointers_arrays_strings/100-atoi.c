@@ -11,7 +11,6 @@
 int _atoi(char *s)
 {
 	int first_digit_pos;
-	char number_in_str;
 	int i, j, k;
 
 	for (i = 0 ; i < (int)strlen(s) ; i++)
