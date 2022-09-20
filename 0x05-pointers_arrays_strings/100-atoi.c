@@ -14,7 +14,12 @@ int _atoi(char *s)
 
 	for (i = 0 ; i < (int)strlen(s) ; i++)
 	{
-		if ((*(s + i) >= '0' && *(s + i) <= '9') || (*(s + i) == '-' && *(s + i + 1) >= '0' && *(s + i + 1) <= '9'))
+		if ((*(s + i) >= '0' && *(s + i) <= '9'))
+		{
+			if (digit_found == 0)
+				*(s + i) = ' ';
+		}
+		else if ((*(s + i) == '-' && *(s + i + 1) >= '0' && *(s + i + 1) <= '9'))
 		{
 			if (digit_found == 0)
 				*(s + i) = ' ';
