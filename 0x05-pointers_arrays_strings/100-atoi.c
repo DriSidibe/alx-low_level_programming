@@ -10,42 +10,34 @@
  *Return: return the result
  */
 int _atoi(char *s)
+
 {
-	int i, j = 0;
-	bool a = false;
 
-	for (i = 0 ; i < (int)strlen(s) ; i++)
-	{
-		if ((*(s + i) >= '0' && *(s + i) <= '9'))
-		{
-			a = true;
-			if (a)
-				j = 1;
-			if (!a)
-				*(s + i) = ' ';
-			if (j == 1)
-				*(s + i) = ' ';
-		}
-		else if ((*(s + i) == '-' && *(s + i + 1) >= '0' && *(s + i + 1) <= '9'))
-		{
-			a = true;
-			if (a)
-				j = 1;
-			if (!a)
-				*(s + i) = ' ';
-			if (j == 1)
-				*(s + i) = ' ';
+	int sign = 1;
 
-		}
-		else
-		{
-			a = false;
-			*(s + i) = ' ';
-		}
-	}
+	unsigned int num = 0;
 
-	if (*s == ' ')
-		return (0);
-	else
-		return (atoi(s));
+
+	do {
+
+		if (*s == '-')
+
+			sign *= -1;
+
+
+		else if (*s >= '0' && *s <= '9')
+
+			num = (num * 10) + (*s - '0');
+
+
+		else if (num > 0)
+
+			break;
+
+
+	} while (*s++);
+
+
+	return (num * sign);
+
 }
