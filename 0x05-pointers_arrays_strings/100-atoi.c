@@ -11,11 +11,11 @@
 int _atoi(char *s)
 {
 	int first_digit_pos;
-	int i, j, k;
+	int i, j, k, digit_count = 0;
 
 	for (i = 0 ; i < (int)strlen(s) ; i++)
 	{
-		if (*(s + i) >= '0' && *(s + i) <= '9')
+		if ((*(s + i) >= '0' && *(s + i) <= '9') || (*(s + i) == '-' && *(s + i + 1) >= '0' && *(s + i + 1) <= '9'))
 		{
 			first_digit_pos = i;
 			j = i;
@@ -25,9 +25,13 @@ int _atoi(char *s)
 
 	for (i = j ; i < (int)strlen(s) ; i++)
 	{
-		if (!(*(s + i) >= '0' && *(s + i) <= '9'))
+		if ((*(s + i) >= '0' && *(s + i) <= '9') || *(s + i) == '-')
 		{
-			*(s + i) = ' ';
+			digit_count++;
+		}
+		else
+		{
+			break;
 		}
 	}
 
@@ -40,5 +44,13 @@ int _atoi(char *s)
 		}
 	}
 
-	return (atoi(s));
+	for (k = digit_count ; k < (int)strlen(s) ; k++)
+	{
+		*(s + k) = ' ';
+	}
+
+	if (*s == ' ')
+		return (0);
+	else
+		return (atoi(s));
 }
