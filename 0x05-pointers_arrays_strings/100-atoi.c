@@ -10,13 +10,19 @@
  */
 int _atoi(char *s)
 {
-	int i, digit_found = 1;
+	int i, j = 0;
+	bool a = false;
 
 	for (i = 0 ; i < (int)strlen(s) ; i++)
 	{
 		if ((*(s + i) >= '0' && *(s + i) <= '9'))
 		{
-			if (digit_found == 0)
+			a = true;
+			if (a)
+				j = 1;
+			if (!a)
+				*(s + i) = ' ';
+			if (j == 1)
 				*(s + i) = ' ';
 		}
 		else if ((*(s + i) == '-' && *(s + i + 1) >= '0' && *(s + i + 1) <= '9'))
@@ -26,7 +32,7 @@ int _atoi(char *s)
 		}
 		else
 		{
-			digit_found = 0;
+			a = false;
 			*(s + i) = ' ';
 		}
 	}
