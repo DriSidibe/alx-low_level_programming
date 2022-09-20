@@ -10,7 +10,7 @@
  */
 int _atoi(char *s)
 {
-	int i, k, digit_found = 1;
+	int i, digit_found = 1;
 
 	for (i = 0 ; i < (int)strlen(s) ; i++)
 	{
