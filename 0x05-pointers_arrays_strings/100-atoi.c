@@ -28,8 +28,14 @@ int _atoi(char *s)
 		}
 		else if ((*(s + i) == '-' && *(s + i + 1) >= '0' && *(s + i + 1) <= '9'))
 		{
-			if (digit_found == 0)
+			a = true;
+			if (a)
+				j = 1;
+			if (!a)
 				*(s + i) = ' ';
+			if (j == 1)
+				*(s + i) = ' ';
+
 		}
 		else
 		{
