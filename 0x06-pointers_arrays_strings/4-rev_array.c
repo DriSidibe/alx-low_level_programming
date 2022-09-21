@@ -1,5 +1,5 @@
 #include <string.h>
-#include <stdlib.h>
+#include <math.h>
 
 /**
  * reverse_array - reverses the content of an array of integers.
@@ -14,7 +14,7 @@ void reverse_array(int *a, int n)
 	int j = n - 1;
 	int tmp;
 
-	for (i = 0 ; i < abs(n / 2) - 1 ; i++)
+	for (i = 0 ; i < ceil(n / 2) - 1 ; i++)
 	{
 		tmp = *(a + i);
 		*(a + i) = *(a + j);
