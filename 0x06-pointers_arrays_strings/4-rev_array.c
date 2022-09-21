@@ -9,9 +9,11 @@
  */
 void reverse_array(int *a, int n)
 {
-	int i, j = n, tmp;
+	int i;
+	int j = n;
+	int tmp;
 
-	for (i = 0 ; i < abs((int)strlen(a)) ; i++)
+	for (i = 0 ; i < abs((int)(strlen(a) / 2)) - 1 ; i++)
 	{
 		tmp = *(a + i);
 		*(a + i) = *(a + j);
