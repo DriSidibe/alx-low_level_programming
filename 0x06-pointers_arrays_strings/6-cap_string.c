@@ -39,7 +39,7 @@ char *cap_string(char *s)
 
 		if (cmp == 1)
 		{
-			*(s + i) = upper(*(s + i));
+			*(s + i) = toupper(*(s + i));
 		}
 
 	}
