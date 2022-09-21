@@ -13,12 +13,27 @@ char *cap_string(char *s)
 
 	for (i = 0 ; i < strlen(s) ; i++)
 	{
-		if (*(s + i) != ' ')
+		switch ((s + i))
 		{
-			cmp++;
+			case '\n':
+			case '\t':
+			case ' ':
+			case ',':
+			case ';':
+			case '.':
+			case '!':
+			case '?':
+			case '"':
+			case '(':
+			case ')':
+			case '{':
+			case '}':
+				cmp++;
+				break;
+			default:
+				cmp = 0;
+				break;
 		}
-		else
-			cmp = 0;
 
 		if (cmp = 1)
 		{
