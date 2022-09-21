@@ -36,7 +36,7 @@ char *cap_string(char *s)
 				break;
 		}
 
-		if (cmp = 1)
+		if (cmp == 1)
 		{
 			*(s + i) = upper(*(s + i));
 		}
