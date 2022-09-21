@@ -12,7 +12,6 @@ char *cap_string(char *s)
 	int i;
 	int nbr_letter = 0;
 	int cmp = 0;
-	int first_letter = 0;
 
 	for (i = 0 ; i < (int)strlen(s) ; i++)
 	{
