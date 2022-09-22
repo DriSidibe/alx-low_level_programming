@@ -24,6 +24,6 @@ void print_number(int n)
 
 		_putchar('0' + first_digit);
 
-		n -= n - remain;
+		n = remain;
 	}
 }
