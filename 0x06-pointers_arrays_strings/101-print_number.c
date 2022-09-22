@@ -6,24 +6,19 @@
  * @n: integer to print
  */
 void print_number(int n)
+
 {
 
-	int i;
-	int first_digit;
-	int remain;
-	int r;
-	int number_of_digit = (int)floor(log10(n)) + 1;
+	unsigned int u = n;
 
-	for (i = number_of_digit ; i > 0 ; i--)
+	if (n < 0)
 	{
-		r = (int)round(pow(10, (i - 1)));
-
-		remain = (int)(n % r);
-
-		first_digit = (int)((n - remain) / r);
-
-		_putchar('0' + first_digit);
-
-		n = remain;
+		_putchar('-');
+		u = -u;
 	}
+
+	if (u / 10)
+		print_number(u / 10);
+
+	_putchar((u % 10) + '0');
 }
