@@ -14,9 +14,9 @@ void print_number(int n)
 	int r;
 	int number_of_digit = floor(log10(n)) + 1;
 
-	for (i = number_of_digit; i > 0; i--)
+	for (i = number_of_digit ; i > 0 ; i--)
 	{
-		r = round(pow(10, (i - 1)))
+		r = round(pow(10, (i - 1)));
 
 		remain = n % r;
 
