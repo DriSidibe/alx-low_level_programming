@@ -8,7 +8,10 @@
 void print_number(int n)
 {
 
-	int i, first_digit, remain, number_of_digit = floor(log10(n)) + 1;
+	int i;
+	int first_digit;
+	int remain;
+	int number_of_digit = floor(log10(n)) + 1;
 
 	for (i = number_of_digit; i > 0; i--)
 	{
