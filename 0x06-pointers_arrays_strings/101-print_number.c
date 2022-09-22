@@ -12,15 +12,15 @@ void print_number(int n)
 	int first_digit;
 	int remain;
 	int r;
-	int number_of_digit = floor(log10(n)) + 1;
+	int number_of_digit = (int)floor(log10(n)) + 1;
 
 	for (i = number_of_digit ; i > 0 ; i--)
 	{
-		r = round(pow(10, (i - 1)));
+		r = (int)round(pow(10, (i - 1)));
 
-		remain = n % r;
+		remain = (int)(n % r);
 
-		first_digit = (n - remain) / r;
+		first_digit = (int)((n - remain) / r);
 
 		_putchar('0' + first_digit);
 
