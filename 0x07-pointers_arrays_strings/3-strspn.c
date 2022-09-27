@@ -8,7 +8,7 @@
  *Return:  a pointer to the first occurrence
  *of the character c in the string s, or NULL if the character is not found
  */
-char *_strspn(char *s, char *accept)
+unsigned int *_strspn(char *s, char *accept)
 {
 	return (strspn(s, accept));
 
