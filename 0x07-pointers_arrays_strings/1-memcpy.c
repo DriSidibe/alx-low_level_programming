@@ -2,8 +2,8 @@
 
 /**
  *_memcpy - fills memory with a constant byte.
- *@src: source memory area
- *@dest: the destination constant
+ *@dest: destination memory area
+ *@src: soure memory area
  *@n: the number of bytes
  *
  *Return: the destination dest memory area
