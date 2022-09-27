@@ -1,5 +1,4 @@
-
-
+#include <string.h>
 
 /**
  *_memset - fills memory with a constant byte.
