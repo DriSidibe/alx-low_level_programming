@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 /**
  *_memcpy - fills memory with a constant byte.
  *@src: source memory area
