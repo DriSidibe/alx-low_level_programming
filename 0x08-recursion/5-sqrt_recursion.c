@@ -1,6 +1,7 @@
 /**
- *_sqrt_recursion - returns the natural square root of a number.
- *@n: the number
+ *is_sqrt - returns the natural square root of a number.
+ *@g: the number
+ *@r: ..
  *
  *Return: the natural square root of n
  */
