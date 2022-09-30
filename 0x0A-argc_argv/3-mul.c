@@ -2,26 +2,25 @@
 #include <stdlib.h>
 
 /**
- *main - multiplies two numbers.
+ *main - multiplies two numbers
+ *@argc: number of arguments passed to the function
+ *@argv: array of arguments
  *
- *REturn: 0 if success
+ *Return: 1 if error, 0 if success
  */
 int main(int argc, char *argv[])
 {
-	int a, b;
-
-	if (argc < 1)
+	if (argc == 3)
 	{
-		puts("Error");
+		int mul;
+
+		mul = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", mul);
 	}
 	else
 	{
-		a = atoi(argv[1];
-		b = atoi(argv[2];
-
-		printf("%d", a * b);
+		printf("Error\n");
+		return (1);
 	}
-
-
 	return (0);
 }
