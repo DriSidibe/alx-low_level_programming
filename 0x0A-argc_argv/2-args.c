@@ -1,19 +1,19 @@
 #include <stdio.h>
 
 /**
- *main - prints all arguments it receives.
+ *main - prints all arguments it receives
+ *@argc: number of arguments
+ *@argv: array of arguments given to program
  *
- *REturn: 0 if success
+ *Return: 0
  */
 int main(int argc, char *argv[])
 {
 	int i;
 
-	for (i = 0, i <= argc, i++)
+	for (i = 0; i < argc; i++)
 	{
-		puts(argv[i]);
-		puts("\n");
+		printf("%s\n", argv[i]);
 	}
-
 	return (0);
 }
