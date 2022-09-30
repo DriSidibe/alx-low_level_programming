@@ -7,7 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-	puts(argc);
+	puts(argc + 1);
 	puts("\n");
 
 	return (0);
