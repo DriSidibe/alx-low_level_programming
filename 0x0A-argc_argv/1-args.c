@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 /**
- *main - prints the number of arguments passed into it.
+ *main - prints its name, followed by a new line.
+ *@argc: param 1
+ *@argv: param 2
  *
- *REturn: 0 if success
+ *Return: 0 if success
  */
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__((__unused__)))
 {
-	puts(argc + 1);
-	puts("\n");
-
+	printf("%d\n", argc - 1);
 	return (0);
 }
