@@ -9,7 +9,9 @@
  */
 int main(int argc, char *argv[])
 {
+	puts("./");
 	puts(argv[0]);
+	puts("\n");
 
 	return (0);
 }
