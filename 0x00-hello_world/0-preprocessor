@@ -1,2 +1,3 @@
 #!/bin/bash
+## preprocess state of a cfile
 gcc -E $CFILE -o c

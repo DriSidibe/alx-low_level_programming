@@ -1,2 +1,3 @@
 #!/bin/bash
+# compilation of a c file with output cisfun
 gcc $CFILE -o cisfun

@@ -2,7 +2,7 @@
 #include "6-abs.c"
 
 /**
- *print_last_digit - check the code
+ *print_last_digit - prints the last digit of a number.
  *@n: the parameter
  *
  *Return: check the code

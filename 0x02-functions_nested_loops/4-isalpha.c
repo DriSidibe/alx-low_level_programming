@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- *_isalpha - check the code
+ *_isalpha -  that checks for alphabetic character.
  *@c: the parameter
  *
  *Return: check the code

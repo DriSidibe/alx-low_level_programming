@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main - the main function
+ *main - display a string with printf
  *
  *Return: 0 if the program was runnig successfuly
  */

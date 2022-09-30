@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- *_abs - check the code
+ *_abs - computes the absolute value of an integer.
  *@n: the parameter
  *
  *Return: check the code

@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 /**
- *add - check the code
+ *add - adds two integers and returns the result.
  *@n1: the parameter
  *@n2: the parameter
  *

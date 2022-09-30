@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- *print_sign - check the code
+ *print_sign - prints the sign of a number.
  *@n: the parameter
  *
  *Return: check the code

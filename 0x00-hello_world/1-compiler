@@ -1,2 +1,3 @@
 #!/bin/bash
+# compiling state of a c file
 gcc -c $CFILE

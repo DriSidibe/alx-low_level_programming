@@ -3,12 +3,8 @@
 #include <string.h>
 #include <time.h>
 
-/* more headers goes there */
-
-
-/* betty style doc for function main goes there */
 /**
- *main - the main function
+ *main - prints all possible combinations of single-digit numbers.
  *
  *Return: 0 is success
  */

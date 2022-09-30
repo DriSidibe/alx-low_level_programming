@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- *print_times_table - check the code
+ *print_times_table - prints the n times table, starting with 0.
  *@n: parameter
  */
 void print_times_table(int n)

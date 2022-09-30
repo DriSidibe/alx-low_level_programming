@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main - the main function
+ *main - print a string with puts
  *
  *Return: 0 if the program was runnig successfuly
  */

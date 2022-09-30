@@ -3,12 +3,8 @@
 
 #include <time.h>
 
-/* more headers goes there */
-
-
-/* betty style doc for function main goes there */
 /**
- *main - the main function
+ *main - prints _putchar, followed by a new line.
  *
  *Return: 0 is success
  */

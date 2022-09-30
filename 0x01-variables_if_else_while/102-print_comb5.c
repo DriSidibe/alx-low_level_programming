@@ -1,17 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* more headers goes there */
-
-
-/* betty style doc for function main goes there */
 /**
- *main - the main function
+ *main - prints all possible combinations of two two-digit numbers.
  *
  *Return: 0 is success
  */
 int main(void)
-
 {
 
 	int a;

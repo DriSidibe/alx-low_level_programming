@@ -1,12 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* more headers goes there */
-
-
-/* betty style doc for function main goes there */
 /**
- *main - the main function
+ *main - prints all possible different combinations of three digits.
  *
  *Return: 0 is success
  */

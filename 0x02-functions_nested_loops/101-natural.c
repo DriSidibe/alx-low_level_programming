@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main - check the code
+ *main - prints the sum of all the multiples of 3 or 5 below 1024 (excluded), followed by a new line.
  *
  *Return: check the code
  */

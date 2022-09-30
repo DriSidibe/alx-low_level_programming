@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main - the main function
+ *main - display the sizes of c variables type
  *
  *Return: 0 if the program was runnig successfuly
  */
