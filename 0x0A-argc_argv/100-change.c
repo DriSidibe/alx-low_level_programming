@@ -5,7 +5,7 @@
  *main -  prints the minimum number of
  * coins to make change for an amount of money.
  *
- *REturn: 0 if success
+ *Return: 0 if success
  */
 int main(int argc, char *argv[])
 {
@@ -31,4 +31,5 @@ int main(int argc, char *argv[])
 
 		}
 	}
+	return (0);
 }
