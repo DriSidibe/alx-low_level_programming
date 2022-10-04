@@ -26,18 +26,6 @@ char *str_concat(char *s1, char *s2)
 		else
 			return (NULL);
 	}
-	else
-	{
-		if (s1 == NULL && s2 != NULL)
-			memcpy(p, s2, strlen(s2));
-		else if (s1 != NULL && s2 == NULL)
-			memcpy(p, s1, strlen(s1));
-		else
-			p = NULL;
-
-		return (p);
-
-	}
 
 	return (NULL);
 }
