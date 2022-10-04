@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	int amount;
 	int num_coin = 0;
 
-	if (argc < 1 && argc > 1)
+	if (argc == 1)
 	{
 		puts("Error");
 		return (1);
