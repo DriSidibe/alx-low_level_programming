@@ -9,7 +9,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int amount, num_coin = 0;
+	int amount;
+	int num_coin = 0;
 
 	if (argc < 1 && argc > 1)
 	{
