@@ -29,11 +29,13 @@ char *str_concat(char *s1, char *s2)
 	else
 	{
 		if (s1 == NULL && s2 != NULL)
-			return (s2);
+			memcpy(p, s2, strlen(s2));
 		else if (s1 != NULL && s2 == NULL)
-			return (s1);
+			memcpy(p, s1, strlen(s1));
 		else
-			return (NULL);
+			p = NULL;
+
+		return (p);
 
 	}
 
