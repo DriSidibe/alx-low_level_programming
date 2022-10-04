@@ -27,14 +27,6 @@ int main(int argc, char *argv[])
 		}
 		else
 		{
-			num_coin += floor(amount/25);
-			amount -= floor(amount/25) * 25;
-			num_coin += floor(amount/25);
-			amount -= floor(amount/25) * 25;
-			num_coin += floor(amount/25);
-			amount -= floor(amount/25) * 25;
-			num_coin += floor(amount/25);
-			amount -= floor(amount/25) * 25;
 
 		}
 	}
