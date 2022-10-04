@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
- *create_array - creates an array of 
+ *create_array - creates an array of
  *chars, and initializes it with a specific char.
  *@size: buffer size
  *@c: char to fill
@@ -24,7 +24,7 @@ char *create_array(unsigned int size, char c)
 
 	if (p == NULL)
 	{
-		return (NULL); 
+		return (NULL);
 	}
 
 	for (i = 0 ; i < size ; i++)
