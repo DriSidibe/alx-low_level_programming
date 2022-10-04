@@ -1,43 +1,43 @@
+#include "main.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
- *str_concat - concatenates two strings.
- *@s1: string 1
- *@s2: string 2
- *Return: the first concatanated string
+ * str_concat - concatenate two strings using malloc
+ * @s1: string 1
+ * @s2: string 2
+ * Return: pointer to concat string
  */
 
 char *str_concat(char *s1, char *s2)
 {
+	char *a;
+	int i, j, c, d;
 
-	char *p = NULL;
+	if (s1 == NULL)
+		s1 = "";
 
-	if (s1 != NULL && s2 != NULL)
+	if (s2 == NULL)
+		s2 = "";
+
+	for (i = 0; s1[i] != '\0'; i++)
+		;
+
+	for (j = 0; s2[j] != '\0'; j++)
+		;
+
+	a = malloc((i * sizeof(*s1)) + (j * sizeof(*s2)) + 1);
+
+	if (a == NULL)
+		return (NULL);
+
+	for (c = 0, d = 0; c < (i + j + 1); c++)
 	{
-		p = malloc(sizeof(char) * (strlen(s1) + strlen(s2)));
+		if (c < i)
+			a[c] = s1[c];
 
-		if (p != NULL)
-		{
-			memcpy(p, s1, strlen(s1));
-			memcpy(p + strlen(s1), s2, strlen(s2));
-			return (p);
-		}
 		else
-			return (NULL);
-	}
-	else
-	{
-		if (s1 == NULL && s2 != NULL)
-			memcpy(p, s2, strlen(s2));
-		else if (s1 != NULL && s2 == NULL)
-			memcpy(p, s1, strlen(s1));
-		else
-			p = NULL;
-
-		return (p);
-
+			a[c] = s2[d++];
 	}
 
-	return (NULL);
+	return (a);
 }
