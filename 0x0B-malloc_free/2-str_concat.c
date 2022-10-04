@@ -12,7 +12,6 @@ char *str_concat(char *s1, char *s2)
 {
 
 	char *p = NULL;
-	int i;
 
 	if (s1 != NULL && s2 != NULL)
 	{
