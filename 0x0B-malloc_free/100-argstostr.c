@@ -17,18 +17,18 @@ char *argstostr(int ac, char **av)
 
 	else
 	{
-		for (i = 1, i <= ac, i++)
+		for (i = 1 ; i <= ac ; i++)
 		{
-			for (j = 0, j < strlen(av[i]), j++)
+			for (j = 0 ; j < strlen(av[i]) ; j++)
 			{
 				k++;
 			}
 		}
 		p = malloc(sizeof(char) * (k + ac));
 
-		for (i = 1, i <= ac, i++)
+		for (i = 1 ; i <= ac ; i++)
 		{
-			for (j = 0, j < strlen(av[i]), j++)
+			for (j = 0 ; j < strlen(av[i]) ; j++)
 			{
 				*(p + strlen(p)) = av[i][j];
 			}
