@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -6,7 +5,6 @@
  * main - print the min number of coins to make change for an amount of money
  * @argc: argument count
  * @argv: argument vector, array of strings
- *
  * Return: 1 if error, 0 otherwise
  */
 int main(int argc, char *argv[])
@@ -22,10 +20,8 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-
 	total = strtol(argv[1], &p, 10);
 	count = 0;
-
 	if (!*p)
 	{
 		while (total > 1)
@@ -47,8 +43,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-
 	printf("%d\n", count);
-
 	return (0);
 }
