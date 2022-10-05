@@ -9,10 +9,10 @@
 char *argstostr(int ac, char **av)
 {
 
-	int i, j;
-	char concatArray[];
+	int i, j, k = 0;
+	char *p = NULL;
 
-	if (ac == 0 -- av == NULL)
+	if (ac == 0 || av == NULL)
 		return (NULL);
 
 	else
@@ -21,11 +21,20 @@ char *argstostr(int ac, char **av)
 		{
 			for (j = 0, j < strlen(av[i]), j++)
 			{
-				concatArray[strlen(concatArray)] = av[i][j];
+				k++;
 			}
-			concatArray[strlen(concatArray)] = '\n';
 		}
-		return (concatArray);
+		p = malloc(sizeof(char) * (k + ac));
+
+		for (i = 1, i <= ac, i++)
+		{
+			for (j = 0, j < strlen(av[i]), j++)
+			{
+				*(p + strlen(p)) = av[i][j];
+			}
+			*(p + strlen(p)) = '\n';
+		}
+		return (p);
 	}
 	return (NULL);
 
