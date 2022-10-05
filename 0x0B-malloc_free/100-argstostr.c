@@ -19,7 +19,7 @@ char *argstostr(int ac, char **av)
 	{
 		for (i = 1 ; i <= ac ; i++)
 		{
-			for (j = 0 ; j < strlen(av[i]) ; j++)
+			for (j = 0 ; j < (int)strlen(av[i]) ; j++)
 			{
 				k++;
 			}
@@ -28,7 +28,7 @@ char *argstostr(int ac, char **av)
 
 		for (i = 1 ; i <= ac ; i++)
 		{
-			for (j = 0 ; j < strlen(av[i]) ; j++)
+			for (j = 0 ; j < (int)strlen(av[i]) ; j++)
 			{
 				*(p + strlen(p)) = av[i][j];
 			}
