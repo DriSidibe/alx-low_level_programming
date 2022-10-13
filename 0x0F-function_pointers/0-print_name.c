@@ -3,11 +3,11 @@
 /**
  * print_name - prints a name as func
  * @name: name of the person
- *@f: the name format
+ * @f: the name format
  *
  * Return: Nothing.
  */
 void print_name(char *name, void (*f)(char *))
 {
-	printf("%s\n", f(name));
+	printf("%s\n", (*f)(name));
 }
