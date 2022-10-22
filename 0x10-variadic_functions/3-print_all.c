@@ -12,11 +12,9 @@ void print_all(const char * const format, ...)
 {
 	int  i;
 	char *sval, *sep;
-
 	va_list args;
 
 	va_start(args, format);
-
 	i = 0;
 
 	while (format != NULL && format[i])
@@ -24,9 +22,7 @@ void print_all(const char * const format, ...)
 		sep = "";
 
 		if (format[i + 1])
-		{
 			sep = ", ";
-		}
 
 		switch (format[i])
 		{
@@ -41,12 +37,8 @@ void print_all(const char * const format, ...)
 			break;
 		case 's':
 			sval = va_arg(args, char *);
-
 			if (sval == NULL || sval[0] == '\0')
-			{
 				sval = "(nil)";
-			}
-
 			printf("%s%s", sval, sep);
 			break;
 		}
@@ -54,5 +46,4 @@ void print_all(const char * const format, ...)
 	}
 	printf("\n");
 	va_end(args);
-
 }
