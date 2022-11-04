@@ -1,38 +1,49 @@
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <stdlib.h>
 #include "main.h"
 
 /**
- *read_textfile - reads a text file and prints it to the POSIX standard output.
- *@filename: the name of the file
- *@letters: number of letters
- *Return: the size of the input string
- */
+* read_textfile - reads a text file and prints it to the POSIX standard output
+* @filename: pointer to the name of the file
+* @letters: number of letters it should read and print
+*Return: n of bytes it can read and print or NULL on failure
+*
+*if the file can not be opened or read, return 0
+*if filename is NULL return 0
+*if write fails or does not write the expected amount of bytes, return 0
+*/
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-
-	int file, i;
-	char str[letters - 1];
+	int fd, len;
+	char *buffer;
 
 	if (filename == NULL)
 		return (0);
 
-	file = open(filename, O_RDONLY);
 
-	if (file == -1)
+	fd = open(filename, O_RDONLY);  /* returns a file pointer */
+
+	if (fd == -1)
 		return (0);
 
-	read(file, str, letters);
 
-	str[letters] = '\n';
+	buffer = malloc(letters * sizeof(char));
 
-	for (i = 0; i < letters; letters++)
-		_putchar(str[i]);
+	if (buffer == NULL)
+		return (0);
 
-	close(file);
+	/* n of bytes to read*/
 
-	return ((ssize_t)letters);
+	len = read(fd, buffer, letters);
+
+	if (write(STDOUT_FILENO, buffer, len) != len)
+		return (0);
+
+
+	close(fd);
+
+	free(buffer);
+
+
+	return (len);
+
 }
