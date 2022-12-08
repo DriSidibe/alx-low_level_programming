@@ -29,7 +29,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (idx >= len)
 		return (NULL);
 	cursor = *h;
-	if (idx != 0 && idx != len)
+	if (idx > 0 && idx < len)
 	{
 		while (i != idx)
 		{
