@@ -3,7 +3,8 @@
 #include "lists.h"
 
 /**
- * delete_dnodeint_at_index - deletes the node at index index of a dlistint_t linked list.
+ * delete_dnodeint_at_index - deletes the node at
+ * index index of a dlistint_t linked list.
  * @head: the double linked list head
  * @index: the index
  *
@@ -11,8 +12,7 @@
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *prev = *head;
-	dlistint_t *cursor = *head;
+	dlistint_t *prev = *head, *cursor = *head;
 	dlistint_t *tmp = *head;
 	dlistint_t *queue1 = *head;
 	dlistint_t *queue2 = *head;
