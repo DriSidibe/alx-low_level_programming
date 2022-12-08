@@ -1,55 +1,40 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
 
 /**
- * delete_dnodeint_at_index - deletes the node at
- * index index of a dlistint_t linked list.
- * @head: the double linked list head
- * @index: the index
- *
- * Return: AKG.
+ * delete_dnodeint_at_index - deletes the node at index of linked list
+ * @head: double pointer to head node
+ * @index: index of the node that should be deleted. Index starts at 0
+ * Return: 1 on success, -1 on failure
  */
+
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *prev = *head, *cursor = *head;
-	dlistint_t *tmp = *head;
-	dlistint_t *queue1 = *head;
-	dlistint_t *queue2 = *head;
-	unsigned int i = 0;
-	unsigned int len = 0;
+	dlistint_t *tmp_node;
 
-	while (cursor != NULL)
-	{
-		queue1 = cursor;
-		queue2 = queue1->prev;
-		cursor = cursor->next;
-		len++;
-	}
-	if (index >= len)
+	tmp_node = *head;
+	if (*head == NULL)
 		return (-1);
-	cursor = *head;
-	if (index > 0 && index < len - 1)
+	while (index != 0)
 	{
-		while (i != index)
-		{
-			cursor = cursor->next;
-			prev = cursor->prev;
-			i++;
-		}
-		prev->next = cursor->next;
-		cursor->next->prev = prev;
-		free(cursor);
+		if (tmp_node == NULL)
+			return (-1);
+		tmp_node = tmp_node->next;
+		index--;
 	}
-	else if (index == 0)
+
+	if (tmp_node == *head)
 	{
-		*head = (*head)->next;
-		free(tmp);
+		*head = tmp_node->next;
+		if (*head != NULL)
+			(*head)->prev = NULL;
 	}
 	else
 	{
-		queue2->next = NULL;
-		free(queue1);
+		tmp_node->prev->next = tmp_node->next;
+		if (tmp_node->next != NULL)
+			tmp_node->next->prev = tmp_node->prev;
 	}
+	free(tmp_node);
 	return (1);
 }
