@@ -1,7 +1,7 @@
 CC = gcc
 SRC = $(wildcard *.c)
+PATH_TO_FILE = school
 
-all : school
-
-school : $(SRC)
+all :
+	@rm school
 	$(CC) $(SRC) -o school
