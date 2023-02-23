@@ -7,5 +7,5 @@ all: $(OBJ)
 	@if [ -f school ]; then rm school; fi;
 	$(CC) $(OBJ) -o $(NAME)
 
-$(OBJ): $(SRC)
+%.o: %.c
 	gcc    -c -o $@ $<
