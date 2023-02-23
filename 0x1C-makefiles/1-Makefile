@@ -4,4 +4,3 @@ SRC = $(wildcard *.c)
 all:
 	@if [ -f school ]; then rm school; fi;
 	$(CC) $(SRC) -o school
-
