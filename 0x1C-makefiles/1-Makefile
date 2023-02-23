@@ -1,5 +1,6 @@
 CC = gcc
-SRC = main.c holberton.c
+SRC = $(wildcard *.c)
 
-all: $(SRC)
-	$(CC) $(SRC) -o holberton 
+all:
+	@if [ -f school ]; then rm school; fi;
+	$(CC) $(SRC) -o school
