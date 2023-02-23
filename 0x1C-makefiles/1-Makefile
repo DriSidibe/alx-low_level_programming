@@ -1,7 +1,5 @@
 CC = gcc
-SRC = $(wildcard *.c)
-PATH_TO_FILE = school
+SRC = main.c holberton.c
 
-all :
-	@rm school
-	$(CC) $(SRC) -o school
+all: $(SRC)
+	$(CC) $(SRC) -o holberton 
