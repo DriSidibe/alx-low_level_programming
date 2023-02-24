@@ -16,15 +16,12 @@ def island_perimeter(grid):
     water = 0
     grid_y = len(grid)
     grid_x = len(grid[0])
-    # print("Grid y:{} and x:{}".format(grid_y, grid_x))
     for y in range(grid_y):
         for x in range(grid_x):
             if grid[y][x] == 1:
                 land += 1
-                # only count if it has any right water or down water
                 if (y > 0 and grid[y - 1][x] == 1):
                     water += 1
                 if (x > 0 and grid[y][x - 1] == 1):
                     water += 1
-    # every adjacent lands made two sides disappeared.
     return land * 4 - water * 2
