@@ -6,6 +6,3 @@ NAME = school
 all: $(OBJ)
 	@if [ -f school ]; then rm school; fi;
 	$(CC) $(OBJ) -o $(NAME)
-
-%.o: %.c
-	gcc    -c -o $@ $<
