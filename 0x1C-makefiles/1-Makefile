@@ -1,0 +1,6 @@
+CC = gcc
+SRC = main.c school.c
+
+all:
+	@if [ -f school ]; then rm school; fi;
+	$(CC) $(SRC) -o school
